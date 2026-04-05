@@ -1,0 +1,12 @@
+npm run dev // mode developpement
+
+prisma:
+npm install prisma
+npx prisma init // initialisation des parametres
+npx prisma migrate dev --name nomBase // migration modele vers prisma
+npx prisma studio // prisma studio interface
+
+prisma client:
+npm install @prisma/client
+npx prisma generate // genere prisma client
+npm i @prisma/adapter-pg
