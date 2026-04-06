@@ -32,11 +32,11 @@ const Header = async () => {
             ) : (
               <>
                 {' '}
-                <div className="hidden md:flex items-center space-x-8">
-                  <button className="px-4 py-2 bg-blue-600 hover:bg-blue-800 text-white rounded-md">
+                <div className="flex items-center space-x-4  text-sm">
+                  <button className="px-2 py-1 bg-blue-600 hover:bg-blue-800 text-white rounded-md">
                     <Link href={'/login'}>Login</Link>
                   </button>
-                  <button className="px-4 py-2 bg-blue-600 hover:bg-blue-800 text-white rounded-md">
+                  <button className="px-2 py-1 bg-blue-600 hover:bg-blue-800 text-white rounded-md">
                     <Link href={'/register'}>Register</Link>
                   </button>
                 </div>
