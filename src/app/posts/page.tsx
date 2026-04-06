@@ -4,7 +4,8 @@ import PostItem from '@/components/PostItem/PostItem';
 import SearchPostInput from '@/components/SearchPostInput/SearchPostInput';
 import { Post } from '@prisma/client';
 import { POST_PER_PAGE } from '@/utils/constants';
-
+export const dynamic = 'force-dynamic';
+export const revalidate = 0; // Désactive le cache pour voir les nouveaux posts immédiatement
 interface IPostPageProps {
   // Dans Next.js 14+, searchParams peut être une Promise
   searchParams: { pageNumber?: string };
