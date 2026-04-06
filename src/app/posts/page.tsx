@@ -2,7 +2,7 @@ import { getPosts, getPostsCount } from '@/apiCalls/postsApiCalls';
 import Pagination from '@/components/Pagination/Pagination';
 import PostItem from '@/components/PostItem/PostItem';
 import SearchPostInput from '@/components/SearchPostInput/SearchPostInput';
-import { Post } from '@/generated/prisma/client';
+import { Post } from '@prisma/client';
 import { POST_PER_PAGE } from '@/utils/constants';
 
 interface IPostPageProps {

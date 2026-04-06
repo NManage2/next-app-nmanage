@@ -1,5 +1,5 @@
 //import { TPost } from '@/utils/types';
-import { Post } from '@/generated/prisma/client';
+import { Post } from '@prisma/client';
 import Link from 'next/link';
 
 interface IPostProps {

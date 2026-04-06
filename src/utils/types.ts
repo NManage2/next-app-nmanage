@@ -1,4 +1,4 @@
-import { Post, Comment, User } from '@/generated/prisma/client';
+import { Post, Comment, User } from '@prisma/client';
 
 type TUserPayload = {
   id: number;

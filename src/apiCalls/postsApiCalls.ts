@@ -1,4 +1,4 @@
-import { Post } from '@/generated/prisma/client';
+import { Post } from '@prisma/client';
 import { DOMAIN } from '@/utils/constants';
 import { SinglePost } from '@/utils/types';
 
