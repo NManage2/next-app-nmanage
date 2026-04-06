@@ -6,7 +6,7 @@ export async function getPosts(
   pageNumber: string | undefined,
 ): Promise<Post[]> {
   const response = await fetch(
-    `http://localhost:3000/api/posts?pageNumber=${pageNumber}`,
+    `${DOMAIN}/api/posts?pageNumber=${pageNumber}`,
     { cache: 'no-store' }, // Pour garantir des données fraîches à chaque page
   );
   if (!response.ok) {
@@ -18,7 +18,7 @@ export async function getPosts(
 // nombre de posts
 export async function getPostsCount(): Promise<number> {
   const response = await fetch(
-    `http://localhost:3000/api/posts/count`,
+    `${DOMAIN}/api/posts/count`,
     { cache: 'no-store' }, // Pour garantir des données fraîches à chaque page
   );
   if (!response.ok) {
@@ -33,7 +33,7 @@ export async function getPostsBasedOnSearch(
   searchText: string,
 ): Promise<Post[]> {
   const response = await fetch(
-    `http://localhost:3000/api/posts/search?searchText=${searchText}`,
+    `${DOMAIN}/api/posts/search?searchText=${searchText}`,
     { cache: 'no-store' }, // Pour garantir des données fraîches à chaque page
   );
   if (!response.ok) {
