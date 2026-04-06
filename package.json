@@ -12,8 +12,6 @@
   "dependencies": {
     "@prisma/adapter-pg": "^5.22.0",
     "@prisma/client": "^5.22.0",
-    "@tailwindcss/postcss": "^4.0.0",
-    "postcss": "^8.4.0",
     "axios": "^1.13.4",
     "bcryptjs": "^3.0.3",
     "cookie": "^1.1.1",
